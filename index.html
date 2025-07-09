@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Down to Earth Electric, Inc.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .logo {
+      display: block;
+      max-width: 160px;
+      height: auto;
+      margin: 2rem auto 1rem;
+    }
+    .texas-button {
+      max-width: 160px;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+    }
+  </style>
+</head>
+<body><!-- force rebuild -->
+
+  
+  <header>
+    <img src="images/Logo-skyblue-nowords.png" alt="Down to Earth Logo" class="logo">
+    <h1>Down to Earth Electric, Inc.</h1>
+    <p>Reliable Residential & Commercial Electrical Services</p>
+  </header>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Car Charger Installations</li>
+      <li>Standard & GFCI/AFCI Breaker Replacements</li>
+      <li>Outlets & Lighting Design</li>
+      <li>LED Retrofits & Fixture Installs</li>
+      <li>Service Panel Upgrades</li>
+      <li>Meter Base Replacements</li>
+      <li>Electrical Diagnostics</li>
+    </ul>
+  </section>
+
+  <section class="portfolio">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <figure><img src="images/cathedral-led-retrofit-1.jpg" alt="Cathedral LED Retrofit 1"></figure>
+      <figure><img src="images/cathedral-led-retrofit-2.jpg" alt="Cathedral LED Retrofit 2"></figure>
+      <figure><img src="images/cathedral-led-retrofit-3.jpg" alt="Cathedral LED Retrofit 3"></figure>
+      <figure><img src="images/cathedral-led-retrofit-4.jpg" alt="Cathedral LED Retrofit 4"></figure>
+      <figure><img src="images/cathedral-led-retrofit-5.jpg" alt="Cathedral LED Retrofit 5"></figure>
+      <figure><img src="images/cathedral-led-retrofit-6.jpg" alt="Cathedral LED Retrofit 6"></figure>
+    </div>
+  </section>
+
+  <section class="book-now-section">
+  <a href="https://clienthub.getjobber.com/booking/38340715-8990-4594-8bc4-0cb6515ff0f2" class="texas-wrapper">
+    <img src="images/texas-logo.png" alt="Book Now" class="texas-button">
+    <span class="book-now-text">Book Now</span>
+  </a>
+</section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Down to Earth Electric, Inc.<br>Licensed & Insured TECL #32046</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
