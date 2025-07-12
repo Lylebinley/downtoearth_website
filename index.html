@@ -1,42 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Down to Earth Electric, Inc.</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .logo {
-      display: block;
-      max-width: 160px;
-      height: auto;
-      margin: 2rem auto 1rem;
-    }
-    .texas-button {
-      max-width: 160px;
-      height: auto;
-      display: block;
-      margin: 1rem auto;
-    }
-  </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-11450357929"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-11450357929');
-</script>
-
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT2P8MSZ6H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MT2P8MSZ6H');
+  </script>
 </head>
-<body><!-- force rebuild -->
-
-  
-  <header>
-    <img src="images/Logo-skyblue-nowords.png" alt="Down to Earth Logo" class="logo">
+<body>
+  <div class="header">
+    <img src="Logo-skyblue-nowords.png" alt="Down to Earth Electric Logo" class="logo" />
     <h1>Down to Earth Electric, Inc.</h1>
     <p>Reliable Residential & Commercial Electrical Services</p>
-  </header>
+    <div class="contact-box">
+      <strong>Call or Text Anytime:</strong> <a href="tel:2148598707">214-859-8707</a>
+    </div>
+  </div>
 
   <section class="services">
     <h2>Our Services</h2>
@@ -51,36 +37,32 @@
     </ul>
   </section>
 
-  <section class="portfolio">
+  <section class="gallery">
     <h2>Photo Gallery</h2>
-    <div class="gallery">
-      <figure><img src="images/cathedral-led-retrofit-1.jpg" alt="Cathedral LED Retrofit 1"></figure>
-      <figure><img src="images/cathedral-led-retrofit-2.jpg" alt="Cathedral LED Retrofit 2"></figure>
-      <figure><img src="images/cathedral-led-retrofit-3.jpg" alt="Cathedral LED Retrofit 3"></figure>
-      <figure><img src="images/cathedral-led-retrofit-4.jpg" alt="Cathedral LED Retrofit 4"></figure>
-      <figure><img src="images/cathedral-led-retrofit-5.jpg" alt="Cathedral LED Retrofit 5"></figure>
-      <figure><img src="images/cathedral-led-retrofit-6.jpg" alt="Cathedral LED Retrofit 6"></figure>
+    <div class="image-grid">
+      <img src="cathedral-1.jpeg" alt="Cathedral Lighting 1" />
+      <img src="cathedral-2.jpeg" alt="Cathedral Lighting 2" />
+      <img src="cathedral-3.jpeg" alt="Cathedral Lighting 3" />
+      <img src="cathedral-4.jpeg" alt="Cathedral Lighting 4" />
+      <img src="cathedral-5.jpeg" alt="Cathedral Lighting 5" />
+      <img src="cathedral-6.jpeg" alt="Cathedral Lighting 6" />
+      <img src="cathedral-7.jpeg" alt="Cathedral Lighting 7" />
+      <img src="cathedral-8.jpeg" alt="Cathedral Lighting 8" />
+      <img src="cathedral-9.jpeg" alt="Cathedral Lighting 9" />
+      <img src="cathedral-10.jpeg" alt="Cathedral Lighting 10" />
     </div>
   </section>
 
-  <section class="book-now-section">
-  <a href="https://clienthub.getjobber.com/booking/38340715-8990-4594-8bc4-0cb6515ff0f2" class="texas-wrapper">
-    <img src="images/texas-logo.png" alt="Book Now" class="texas-button">
-    <span class="book-now-text">Book Now</span>
+  <footer>
+    <div id="book-now-container">
+  <a href="https://your-jobber-booking-link.com" class="texas-button">
+    <img src="your-texas-image.svg" alt="Book Now Button" />
+    <span class="book-now-text">BOOK NOW</span>
   </a>
-</section>
+</div>
 
-  <footer style="text-align:center;">
-  <img src="texas-logo-book-now.png" class="texas-button" alt="Book Now">
-  <p>
-    &copy; 2025 Down to Earth Electric, Inc.<br>
-    Licensed & Insured TECL #32046<br>
-    Call or Text: <a href="tel:2148598707">214-859-8707</a>
-  </p>
-</footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <p>&copy; 2025 Down to Earth Electric, Inc.</p>
+    <p>Licensed & Insured TECL #31119 | Master Electrician #337154</p>
+  </footer>
 </body>
 </html>
