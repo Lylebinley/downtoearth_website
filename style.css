@@ -98,37 +98,35 @@ footer {
   font-size: 0.9rem;
 }
 
-#book-now {
-  margin-bottom: 1rem;
-}
-
-#book-now a {
-  display: inline-block;
+.book-now-button {
   position: relative;
-  text-align: center;
-  text-decoration: none;
-}
-
-#book-now img {
-  max-width: 150px;
+  display: inline-block;
+  width: 150px;
   height: auto;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-#book-now span {
-  position: absolute;
-  top: 8px;
-  left: 0;
+.book-now-button img {
   width: 100%;
-  font-weight: bold;
-  font-size: 1rem;
-  color: white;
-  text-shadow: 1px 1px 3px #000;
-  pointer-events: none;
+  height: auto;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-#book-now a:hover img {
+.book-now-button:hover img {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.2) drop-shadow(0 0 10px #00bfff);
+}
+
+.book-now-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  pointer-events: none;
 }
