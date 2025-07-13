@@ -2,131 +2,116 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
-  color: #222;
-  line-height: 1.6;
+  background-color: #f8f9f9;
+  color: #1c1c1c;
+}
+
+header img {
+  max-width: 300px;
+  padding: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #1e3d32;
+}
+
+p {
   text-align: center;
 }
 
-header {
-  background-color: #ffffff;
-  padding: 1rem;
-  border-bottom: 2px solid #ddd;
-}
-
-.top-logo {
-  max-width: 200px;
-  height: auto;
-}
-
-h1 {
-  margin-top: 1rem;
-  font-size: 2rem;
-  color: #004d40;
-}
-
-.phone-call {
-  background-color: #e0f7fa;
-  color: #006064;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin: 1rem auto;
-  padding: 0.5rem;
-  width: fit-content;
-  border-radius: 8px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-}
-
-.phone-call a {
-  color: #006064;
+a.phone-link {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #007bb5;
+  padding: 10px 15px;
   text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
 }
 
-.phone-call a:hover {
-  text-decoration: underline;
+a.phone-link:hover {
+  background-color: #005a86;
 }
 
-.services {
-  padding: 1rem;
-  max-width: 600px;
-  margin: auto;
-  text-align: left;
-}
-
-.services h2 {
-  color: #00796b;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.5rem;
-}
-
-.services ul {
+ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 40px;
+  max-width: 700px;
+  margin: 0 auto 20px;
 }
 
-.gallery {
-  margin: 2rem 0;
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
 }
 
-.gallery h2 {
-  color: #00796b;
+.photo-gallery figure {
+  text-align: center;
+  width: 180px;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
-  padding: 0 1rem;
-}
-
-.gallery-grid img {
+.photo-gallery img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #eeeeee;
-  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+  font-size: 0.9em;
+  color: #444;
 }
 
-.book-now-button {
-  position: relative;
-  display: inline-block;
-  width: 150px;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.book-now-button img {
-  width: 100%;
-  height: auto;
-  border: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.book-now-button:hover img {
-  transform: scale(1.05);
-  filter: brightness(1.2) drop-shadow(0 0 10px #00bfff);
-}
-
-.book-now-text {
-  position: absolute;
-  top: 50%;
+.book-now-btn {
+  position: fixed;
+  bottom: 20px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+
+  background-image: url('images/texas-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
   color: black;
+  font-size: 14px;
   font-weight: bold;
-  font-size: 18px;
-  pointer-events: none;
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 🔥 Nuke anything causing a box */
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+
+  /* Keep it above everything */
+  z-index: 9999;
 }
+
+.book-now-btn:hover {
+  filter: brightness(1.4) drop-shadow(0 0 6px rgba(0, 0, 0, 0.7));
+  transform: translateX(-50%) scale(1.1);
+}body {
+  background: red;
+}
+
