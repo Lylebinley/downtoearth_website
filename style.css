@@ -1,135 +1,134 @@
-/* === GENERAL RESET === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #222;
   line-height: 1.6;
+  text-align: center;
 }
 
-.container {
-  width: 90%;
-  max-width: 1100px;
+header {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+
+.top-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #004d40;
+}
+
+.phone-call {
+  background-color: #e0f7fa;
+  color: #006064;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.phone-call a {
+  color: #006064;
+  text-decoration: none;
+}
+
+.phone-call a:hover {
+  text-decoration: underline;
+}
+
+.services {
+  padding: 1rem;
+  max-width: 600px;
   margin: auto;
-  padding: 20px;
-  background-color: white;
+  text-align: left;
+}
+
+.services h2 {
+  color: #00796b;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.services ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.gallery {
+  margin: 2rem 0;
+}
+
+.gallery h2 {
+  color: #00796b;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 0 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* === HEADER === */
-header {
-  text-align: center;
-  padding-bottom: 20px;
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-header img {
-  max-width: 250px;
-  height: auto;
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #eeeeee;
+  font-size: 0.9rem;
 }
 
-/* === PHONE BLOCK === */
-.phone-block {
+#book-now {
+  margin-bottom: 1rem;
+}
+
+#book-now a {
   display: inline-block;
-  background-color: #0078D4;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 12px;
-  font-weight: bold;
-  font-size: 1.2em;
-  margin: 20px 0;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-  text-decoration: none;
-}
-
-.phone-block:hover {
-  background-color: #005ea2;
-  cursor: pointer;
-}
-
-/* === CONTENT SECTIONS === */
-h1, h2 {
-  color: #222;
-  margin-bottom: 15px;
-}
-
-p {
-  margin-bottom: 15px;
-  font-size: 1.05em;
-}
-
-ul {
-  margin-left: 20px;
-  margin-bottom: 15px;
-}
-
-/* === BOOK NOW BUTTON === */
-.book-now-btn {
   position: relative;
-  display: inline-block;
-  margin: 40px auto;
-  width: 200px;
-  height: auto;
   text-align: center;
   text-decoration: none;
-  cursor: pointer;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
-.book-now-btn {
-  position: relative;
-  display: inline-block;
-  margin: 40px auto;
-  width: 200px;
+#book-now img {
+  max-width: 150px;
   height: auto;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 10px;
 }
 
-.book-now-btn img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.book-now-btn:hover img {
-  transform: scale(1.05);
-  filter: brightness(1.15);
-}
-
-.book-now-btn::after {
-  content: "BOOK NOW";
+#book-now span {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  font-size: 20px;
+  top: 8px;
+  left: 0;
+  width: 100%;
   font-weight: bold;
-  font-family: Arial, sans-serif;
-  text-shadow: 1px 1px 2px white;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 1px 1px 3px #000;
   pointer-events: none;
 }
 
-
-/* === FOOTER === */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #ccc;
-  font-size: 0.9em;
-  color: #777;
-}
-
-footer p {
-  margin-bottom: 10px;
+#book-now a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
