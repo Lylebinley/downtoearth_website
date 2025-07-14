@@ -79,8 +79,8 @@ footer {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 
   background-image: url('images/texas-logo.png');
   background-repeat: no-repeat;
