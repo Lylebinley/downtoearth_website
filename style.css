@@ -79,19 +79,19 @@ footer {
 }
 
 .texas-button {
-    background-image: url('images/texas-logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 140px;
-    height: 138px; /* increased from 130 to 138px (~28mm to ~38mm) */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: black;
-    font-size: 1.1em;
-    transition: transform 0.2s ease, filter 0.2s ease;
+  background-image: url('images/texas-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 140px !important;
+  height: 138px !important;  /* force this height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: black;
+  font-size: 1.1em;
+  transition: transform 0.2s ease;
 }
 
 .texas-button:hover {
